@@ -1,4 +1,5 @@
 <?php 
 require("variables.php");
-echo $name . " " . $lastname;
+echo $name . " " . $lastname ."<br>";
+echo print_r($fruits); 
 ?>
