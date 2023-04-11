@@ -1,6 +1,8 @@
 <?php 
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +12,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This works!</h1>
+    
+        <h1>Elden Ring</h1>
+        <p>
+            Ja elden ring is leuk insert 200 woorden.
+        </p>
+        <img class="subject-picture" alt="Elden Ring Picture" src="images/EldenRing.png" >
 </body>
 </html>
