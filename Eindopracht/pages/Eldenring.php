@@ -14,9 +14,14 @@
 <body>
     
         <h1>Elden Ring</h1>
-        <p>
-            Ja elden ring is leuk insert 200 woorden.
-        </p>
-        <img class="subject-picture" alt="Elden Ring Picture" src="images/EldenRing.png" >
+        <div class="flex-container">
+            <div class="text-container">
+                dog ahead
+                </p>
+            </div>
+            <div class="img-container">
+            <img class="subject-picture" alt="Elden Ring Picture" src="images/EldenRing.png" >
+            </div>
+        </div>
 </body>
 </html>

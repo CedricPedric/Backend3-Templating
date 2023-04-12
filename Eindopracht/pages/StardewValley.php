@@ -12,11 +12,16 @@
     <title>Document</title>
 </head>
 <body>
-    
         <h1>Stardew Valley</h1>
-        <p>
-            Something something
-        </p>
-        <img class="subject-picture" alt="Elden Ring Picture" src="images/stardewvalley.png" >
+        <div class="flex-container">
+            <div class="text-container">
+                <p>
+                Ooga booga farm spelletje
+                </p>
+            </div>
+            <div class="img-container">
+            <img class="subject-picture" alt="Elden Ring Picture" src="images/stardewvalley.png" > 
+            </div>
+        </div>
 </body>
 </html>

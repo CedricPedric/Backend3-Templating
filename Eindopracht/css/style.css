@@ -10,6 +10,7 @@ body{
     width: fit-content;
     height: 45px;
     color: white;
+    font-weight: bold;
 }
 #random-image{
     margin-top: 5px;
@@ -55,11 +56,25 @@ height: 30px;
 }
 
 .subject-picture{
-    height: 250px;
-    width: auto;
+    height: auto;
+    width: 300px;
 }
 
 .formnavcontainer{
     display:flex;
     gap: 10px
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-container{
+    width: 70%;
+    margin-right: 5px;
+}
+
+.img-container{
+    width: 30%;
 }

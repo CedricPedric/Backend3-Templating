@@ -12,11 +12,17 @@
     <title>Document</title>
 </head>
 <body>
-    
         <h1>Terraria</h1>
-        <p>
-            Something something
-        </p>
-        <img class="subject-picture" alt="Elden Ring Picture" src="images/Terraria.png" >
+        <div class="flex-container">
+            <div class="text-container">
+                <p>
+                Terraria is een erg belangrijke game voor me geweest zo heb ik dit spel heel erg veel met vrienden gespeeld.
+                Ik vind het een erg leuk spel waar ik iets te veel tijd in heb gezet.
+                </p>
+            </div>
+            <div class="img-container">
+            <img class="subject-picture" alt="cavenoises" src="images/Terraria.png" >
+            </div>
+        </div>
 </body>
 </html>

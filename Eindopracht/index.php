@@ -36,7 +36,10 @@
                 ;
             } 
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            echo "<br> <h1>Klik on the navbar!</h1>";
+            if(array_key_exists("page",$_GET)){             
+                include('./pages/EldenRing.php');
+            }
+            // echo "<br> <h1>Klik on the navbar!</h1>";
             }
             ;
     
