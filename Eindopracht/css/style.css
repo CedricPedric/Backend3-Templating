@@ -7,8 +7,9 @@ body{
     align-items: center;
     background-color: blueviolet;
     border-radius: 15px;
-    width: 65px;
-    height: 35px;
+    width: fit-content;
+    height: 45px;
+    color: white;
 }
 #random-image{
     margin-top: 5px;
@@ -56,4 +57,9 @@ height: 30px;
 .subject-picture{
     height: 250px;
     width: auto;
+}
+
+.formnavcontainer{
+    display:flex;
+    gap: 10px
 }

@@ -1,5 +1,5 @@
 <?php 
-    $pathToRoot =  './';
+
 ?>
 
 
@@ -21,17 +21,25 @@
 
         <?php 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $errors = [];
-            foreach($_POST as $key => $value){
-                if (empty($value)){
-                    $errors[$key] = "Can't be empty";
-                } 
+                if(array_key_exists("EldenRing",$_POST)){             
+                    include('./pages/EldenRing.php');
+                }
+                elseif(array_key_exists("DungeonsAndDragons",$_POST)){             
+                    include('./pages/DungeonsAndDragons.php');
+                }
+                elseif(array_key_exists("StardewValley",$_POST)){             
+                    include('./pages/StardewValley.php');
+                }
+                elseif(array_key_exists("Terraria",$_POST)){             
+                    include('./pages/Terraria.php');
+                }
+                ;
+            } 
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            echo "<br> <h1>Klik on the navbar!</h1>";
             }
-            if (!$errors){
-                $showForm = false;
-            }
-        }
-        include('./pages/EldenRing.php');
+            ;
+    
         ?>
         <?php 
         include("./include/footer.php");
@@ -39,60 +47,3 @@
     </main>
 </body>
 </html>
-
-<!-- <style>
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .navlinks{
-        padding:5px;
-        display:flex;
-        align-items: center;
-        background-color: blueviolet;
-        border-radius: 15px;
-        width: 65px;
-        height: 35px;
-    }
-    #random-image{
-        margin-top: 5px;
-        border-radius: 150px;
-        height:60px;
-        width: 70px;
-        margin-left: auto;
-        right: 0px;
-    }
-    .links{
-        color:white;
-        margin-left: 10px;
-        /* text-decoration:none; */
-        
-    }
-    .maincontainer{
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-    .navcontainer{
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 25px;
-    background: #4621ad;
-    padding: 20px;
-    width: 750px;
-    height: 30px;
-    }
-    .footercontainer{
-        background-color: gray;
-        position: absolute;
-        margin-top: auto;
-        border-radius: 25px;
-        bottom:0px;
-        width: 750px;
-        padding:5px;
-        margin-bottom:1%;
-    }
-    #name-date-text{
-        margin-left: 15px;
-    }
-</style> -->
