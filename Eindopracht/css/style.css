@@ -2,15 +2,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .navlinks{
-    padding:5px;
+    padding: 5px;
     display:flex;
     align-items: center;
     background-color: blueviolet;
     border-radius: 15px;
     width: fit-content;
     height: 45px;
-    color: white;
-    font-weight: bold;
 }
 #random-image{
     margin-top: 5px;
@@ -22,9 +20,8 @@ body{
 }
 .links{
     color:white;
-    margin-left: 10px;
     text-decoration:none;
-    
+    font-weight: bold;
 }
 .maincontainer{
     margin-left: 30%;

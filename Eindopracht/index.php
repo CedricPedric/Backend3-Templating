@@ -20,26 +20,24 @@
         ?>
 
         <?php 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if(array_key_exists("EldenRing",$_POST)){             
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            if(array_key_exists("page",$_GET)){ 
+                if($_GET["page"] == "EldenRing"){
                     include('./pages/EldenRing.php');
                 }
-                elseif(array_key_exists("DungeonsAndDragons",$_POST)){             
+                elseif($_GET["page"] == "DungeonsAndDragons"){
                     include('./pages/DungeonsAndDragons.php');
                 }
-                elseif(array_key_exists("StardewValley",$_POST)){             
+                elseif($_GET["page"] == "StardewValley"){
                     include('./pages/StardewValley.php');
                 }
-                elseif(array_key_exists("Terraria",$_POST)){             
+                elseif($_GET["page"] == "Terraria"){
                     include('./pages/Terraria.php');
-                }
-                ;
-            } 
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            if(array_key_exists("page",$_GET)){             
-                include('./pages/EldenRing.php');
+                }      
             }
-            // echo "<br> <h1>Klik on the navbar!</h1>";
+            else{
+                echo "<br> <h1>Klik on the navbar!</h1>";
+            }
             }
             ;
     
